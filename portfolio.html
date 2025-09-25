@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Alex Johnson | Web Developer</title>
+    <meta name="description" content="View my portfolio of web development projects including e-commerce platforms, web applications, and responsive websites.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__container">
+                <div class="nav__logo">
+                    <a href="index.html">Alex Johnson</a>
+                </div>
+                <ul class="nav__menu" id="nav-menu">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="services.html" class="nav__link">Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="portfolio.html" class="nav__link nav__link--active">Portfolio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav__toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-header__title">Portfolio</h1>
+                <p class="page-header__subtitle">A showcase of my recent projects and creative work</p>
+            </div>
+        </section>
+
+        <!-- Portfolio Filter -->
+        <section class="portfolio-filter">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="web">Web Development</button>
+                    <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+                    <button class="filter-btn" data-filter="app">Web Apps</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Grid -->
+        <section class="portfolio-grid">
+            <div class="container">
+                <div class="portfolio__grid">
+                    <!-- Project 1 -->
+                    <div class="portfolio-item" data-category="ecommerce">
+                        <div class="portfolio-item__image">
+                            <div class="portfolio-item__image-placeholder">
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                            <div class="portfolio-item__overlay">
+                                <div class="portfolio-item__links">
+                                    <a href="#" class="portfolio-link" title="View Live Site">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="portfolio-link" title="View Code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item__content">
+                            <h3 class="portfolio-item__title">E-Commerce Platform</h3>
+                            <p class="portfolio-item__description">
+                                A full-featured online store with shopping cart, payment integration, 
+                                and admin dashboard. Built with modern web technologies for optimal performance.
+                            </p>
+                            <div class="portfolio-item__tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">Stripe</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="portfolio-item" data-category="app">
+                        <div class="portfolio-item__image">
+                            <div class="portfolio-item__image-placeholder">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                            <div class="portfolio-item__overlay">
+                                <div class="portfolio-item__links">
+                                    <a href="#" class="portfolio-link" title="View Live Site">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="portfolio-link" title="View Code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item__content">
+                            <h3 class="portfolio-item__title">Task Management App</h3>
+                            <p class="portfolio-item__description">
+                                A collaborative project management tool with real-time updates, 
+                                team collaboration features, and intuitive drag-and-drop interface.
+                            </p>
+                            <div class="portfolio-item__tech">
+                                <span class="tech-tag">Vue.js</span>
+                                <span class="tech-tag">Express</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">Socket.io</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="portfolio-item" data-category="web">
+                        <div class="portfolio-item__image">
+                            <div class="portfolio-item__image-placeholder">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <div class="portfolio-item__overlay">
+                                <div class="portfolio-item__links">
+                                    <a href="#" class="portfolio-link" title="View Live Site">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="portfolio-link" title="View Code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item__content">
+                            <h3 class="portfolio-item__title">Corporate Website</h3>
+                            <p class="portfolio-item__description">
+                                A modern, responsive corporate website with CMS integration, 
+                                SEO optimization, and performance-focused design.
+                            </p>
+                            <div class="portfolio-item__tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">WordPress</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="portfolio-item" data-category="app">
+                        <div class="portfolio-item__image">
+                            <div class="portfolio-item__image-placeholder">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="portfolio-item__overlay">
+                                <div class="portfolio-item__links">
+                                    <a href="#" class="portfolio-link" title="View Live Site">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="portfolio-link" title="View Code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item__content">
+                            <h3 class="portfolio-item__title">Analytics Dashboard</h3>
+                            <p class="portfolio-item__description">
+                                A comprehensive analytics dashboard with real-time data visualization, 
+                                custom charts, and interactive reports.
+                            </p>
+                            <div class="portfolio-item__tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">D3.js</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">FastAPI</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div class="portfolio-item" data-category="web">
+                        <div class="portfolio-item__image">
+                            <div class="portfolio-item__image-placeholder">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                            <div class="portfolio-item__overlay">
+                                <div class="portfolio-item__links">
+                                    <a href="#" class="portfolio-link" title="View Live Site">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="portfolio-link" title="View Code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item__content">
+                            <h3 class="portfolio-item__title">Restaurant Website</h3>
+                            <p class="portfolio-item__description">
+                                A beautiful restaurant website with online menu, reservation system, 
+                                and location integration for enhanced customer experience.
+                            </p>
+                            <div class="portfolio-item__tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Google Maps API</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 6 -->
+                    <div class="portfolio-item" data-category="ecommerce">
+                        <div class="portfolio-item__image">
+                            <div class="portfolio-item__image-placeholder">
+                                <i class="fas fa-gem"></i>
+                            </div>
+                            <div class="portfolio-item__overlay">
+                                <div class="portfolio-item__links">
+                                    <a href="#" class="portfolio-link" title="View Live Site">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="portfolio-link" title="View Code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item__content">
+                            <h3 class="portfolio-item__title">Jewelry Store</h3>
+                            <p class="portfolio-item__description">
+                                An elegant e-commerce platform for jewelry with high-quality image galleries, 
+                                product customization, and secure payment processing.
+                            </p>
+                            <div class="portfolio-item__tech">
+                                <span class="tech-tag">Vue.js</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">PayPal API</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Showcase -->
+        <section class="skills-showcase">
+            <div class="container">
+                <h2 class="section__title">Technical Skills</h2>
+                <div class="skills-showcase__grid">
+                    <div class="skill-showcase">
+                        <div class="skill-showcase__icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <h3 class="skill-showcase__title">Frontend Development</h3>
+                        <p class="skill-showcase__description">
+                            Expert in HTML5, CSS3, JavaScript, and modern frameworks like React and Vue.js
+                        </p>
+                    </div>
+                    <div class="skill-showcase">
+                        <div class="skill-showcase__icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3 class="skill-showcase__title">Backend Development</h3>
+                        <p class="skill-showcase__description">
+                            Proficient in Node.js, Python, and database management with MongoDB and PostgreSQL
+                        </p>
+                    </div>
+                    <div class="skill-showcase">
+                        <div class="skill-showcase__icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 class="skill-showcase__title">Responsive Design</h3>
+                        <p class="skill-showcase__description">
+                            Mobile-first approach ensuring perfect display across all devices and screen sizes
+                        </p>
+                    </div>
+                    <div class="skill-showcase">
+                        <div class="skill-showcase__icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3 class="skill-showcase__title">Performance</h3>
+                        <p class="skill-showcase__description">
+                            Optimization expertise for fast loading times and excellent user experience
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta__content">
+                    <h2 class="cta__title">Like What You See?</h2>
+                    <p class="cta__text">
+                        Let's work together to create something amazing for your next project.
+                    </p>
+                    <a href="contact.html" class="btn btn--primary btn--large">Start Your Project</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3 class="footer__title">Alex Johnson</h3>
+                    <p class="footer__text">
+                        Creating digital experiences that make a difference.
+                    </p>
+                </div>
+                <div class="footer__section">
+                    <h4 class="footer__subtitle">Quick Links</h4>
+                    <ul class="footer__links">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h4 class="footer__subtitle">Connect</h4>
+                    <div class="footer__social">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2024 Alex Johnson. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

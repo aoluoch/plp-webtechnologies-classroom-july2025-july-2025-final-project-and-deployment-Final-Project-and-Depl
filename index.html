@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Johnson - Web Developer Portfolio</title>
+    <meta name="description" content="Professional web developer specializing in modern, responsive websites and web applications.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__container">
+                <div class="nav__logo">
+                    <a href="index.html">Alex Johnson</a>
+                </div>
+                <ul class="nav__menu" id="nav-menu">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link nav__link--active">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="services.html" class="nav__link">Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="portfolio.html" class="nav__link">Portfolio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav__toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero__container">
+                <div class="hero__content">
+                    <h1 class="hero__title">
+                        Hi, I'm <span class="hero__name">Alex Johnson</span>
+                    </h1>
+                    <p class="hero__subtitle">
+                        A passionate web developer creating modern, responsive websites and applications
+                    </p>
+                    <div class="hero__buttons">
+                        <a href="portfolio.html" class="btn btn--primary">View My Work</a>
+                        <a href="contact.html" class="btn btn--secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero__image">
+                    <div class="hero__image-placeholder">
+                        <i class="fas fa-code"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Preview Section -->
+        <section class="about-preview">
+            <div class="container">
+                <div class="about-preview__content">
+                    <h2 class="section__title">About Me</h2>
+                    <p class="about-preview__text">
+                        I'm a dedicated web developer with 3+ years of experience creating digital solutions 
+                        that make a difference. I specialize in front-end development, responsive design, 
+                        and user experience optimization.
+                    </p>
+                    <a href="about.html" class="btn btn--outline">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Preview Section -->
+        <section class="services-preview">
+            <div class="container">
+                <h2 class="section__title">What I Do</h2>
+                <div class="services-preview__grid">
+                    <div class="service-card">
+                        <div class="service-card__icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3 class="service-card__title">Web Development</h3>
+                        <p class="service-card__description">
+                            Custom websites and web applications built with modern technologies
+                        </p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-card__icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 class="service-card__title">Responsive Design</h3>
+                        <p class="service-card__description">
+                            Mobile-first approach ensuring your site looks great on all devices
+                        </p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-card__icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3 class="service-card__title">Performance Optimization</h3>
+                        <p class="service-card__description">
+                            Fast-loading, SEO-optimized websites that rank well in search engines
+                        </p>
+                    </div>
+                </div>
+                <div class="services-preview__cta">
+                    <a href="services.html" class="btn btn--primary">View All Services</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section -->
+        <section class="featured-projects">
+            <div class="container">
+                <h2 class="section__title">Featured Projects</h2>
+                <div class="featured-projects__grid">
+                    <div class="project-card">
+                        <div class="project-card__image">
+                            <div class="project-card__image-placeholder">
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">E-Commerce Platform</h3>
+                            <p class="project-card__description">
+                                A full-featured online store with shopping cart, payment integration, and admin dashboard.
+                            </p>
+                            <div class="project-card__tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-card__image">
+                            <div class="project-card__image-placeholder">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Task Management App</h3>
+                            <p class="project-card__description">
+                                A collaborative project management tool with real-time updates and team collaboration features.
+                            </p>
+                            <div class="project-card__tech">
+                                <span class="tech-tag">Vue.js</span>
+                                <span class="tech-tag">Express</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-projects__cta">
+                    <a href="portfolio.html" class="btn btn--outline">View All Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta__content">
+                    <h2 class="cta__title">Ready to Start Your Project?</h2>
+                    <p class="cta__text">
+                        Let's work together to bring your ideas to life with a modern, professional website.
+                    </p>
+                    <a href="contact.html" class="btn btn--primary btn--large">Get Started Today</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3 class="footer__title">Alex Johnson</h3>
+                    <p class="footer__text">
+                        Creating digital experiences that make a difference.
+                    </p>
+                </div>
+                <div class="footer__section">
+                    <h4 class="footer__subtitle">Quick Links</h4>
+                    <ul class="footer__links">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h4 class="footer__subtitle">Connect</h4>
+                    <div class="footer__social">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2024 Alex Johnson. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
